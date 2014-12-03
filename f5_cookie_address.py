@@ -1,4 +1,4 @@
-#!/usr/local/bin/python2.7
+#!/usr/bin/env python2
 
 import sys;
 
@@ -17,3 +17,4 @@ dest_ip.reverse();
 dest_port.reverse();
 dest_port = ''.join( dest_port );
 print "BigIP address decoded: %s:%s" %( '.'.join( dest_ip ), int( str( dest_port ), base=16 ) );
+
