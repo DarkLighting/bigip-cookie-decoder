@@ -2,7 +2,7 @@
 
 import sys;
 
-if ( ( len(sys.argv) < 2 ) or ( sys.argv[1] == '-h' ) or ( sys.argv[1] == '--help' ) ):
+if ( ( len(sys.argv) != 2 ) or ( sys.argv[1] == '-h' ) or ( sys.argv[1] == '--help' ) ):
     print '\nUsage: python2 %s <encoded address>\n' %(sys.argv[0]);
     print 'Example:\n python2 %s 1677787402.36895.0000\n' %(sys.argv[0]);
     exit();
